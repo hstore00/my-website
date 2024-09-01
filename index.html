@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتج</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #111;
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000;
+        }
+        .product-description {
+            font-size: 1.2rem;
+            color: #111;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 45px;
+            margin: 0 auto;
+            display: block;
+        }
+        /* CSS مخصص من ملف JSON */
+        img {
+            position: relative;
+            animation: bounce-1 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce-1 {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        button {
+            animation: bounce .8s infinite;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .review-section {
+            background-color: #0f0a14;
+            color: #efeef2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- أول قسم: الترمس الحراري -->
+    <div class="section" style="background-color: #fff;">
+        <h1 class="product-title">ترمس حراري 3كوب</h1>
+        <p class="product-description">لو عايز مشروبك يحافظ علي حرارته ف الشغل او الجامعه او التمرين سواء كان سخن او بارد يبقي اكيد محتاج الترمس الحراري</p>
+        <img src="https://easyorders.fra1.digitaloceanspaces.com/1725223242300426739.jpg" alt="ترمس حراري" class="product-image">
+    </div>
+
+    <!-- ثاني قسم: المميزات -->
+    <div class="section">
+        <h2 class="product-title">أفضل مج علي الاطلاق</h2>
+        <ul class="product-description">
+            <li>✅ترمس عازل للحراره 500 ملى مع 3 كوب</li>
+            <li>✅مصنوع من الستانلستيل الامن غذائيا</li>
+            <li>✅مزدوج الجدار يحفظ المشروبات بارده و ساخنه اكثر من 10 ساعات</li>
+            <li>✅يأتي مع شنطه هديه شيك جدا</li>
+        </ul>
+    </div>
+
+    <!-- زر الطلب -->
+    <div class="section" style="background-color: #fff;">
+        <button>اطلب الان واحصل علي توصيل مجاني!</button>
+    </div>
+
+    <!-- قسم المراجعات -->
+    <div class="review-section">
+        <h2>تقييمات المنتج</h2>
+        <ul class="product-description">
+            <li>منتج مضمون ومجرب وحصل علي تقييمات ايجابية من اكثر من 500 عميل</li>
+            <li>ادفع عند الاستلام بدون اي مصايف اضافية</li>
+            <li>اطلب ويصلك المنتج لباب البيت</li>
+            <li>شحن مجاني لفتره محدوده</li>
+        </ul>
+    </div>
+</body>
+</html>
